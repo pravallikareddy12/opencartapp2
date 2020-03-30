@@ -15,18 +15,20 @@ public class HomePage {
 	public HomePage(WebDriver driver) {
 		this.driver=driver;
 	}
+	//explicitwait
 	public  void explicitWait() {
 		WebDriverWait wait = new WebDriverWait(driver,50);
 		wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(waitLoc));
 		
 	}
-	
+	//click on myaccount
 	public  void clickOnMyAccount() 
 	{
 		
        driver.findElement(myAccLocator).click();
 		
 	}
+	//click on login
 	public  void clickOnLogin() 
 	{
 		
